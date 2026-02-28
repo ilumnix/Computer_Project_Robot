@@ -106,14 +106,14 @@ void loop() {
     // if just the left sensor sees the line, turnright
     
     else if (leftValue < LEFTCVALUE) {
-      turnLeft();
+      turnRight();
       ledOn(CRGB::Green);  
     }
     
     // if just the right sensor sees the line, turn left
     
     else if (rightValue < RIGHTCVALUE) {
-      turnRight();
+      turnLeft();
       ledOn(CRGB::Green);  
     }
     
